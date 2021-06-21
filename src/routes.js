@@ -6,7 +6,7 @@ import Lobby from "./components/Lobby";
 export default (
   <Switch>
     <Route path="/game" component={Game} />
-    <Route path="/lobby" component={Lobby} />
+    <Route exact path="/" component={Lobby} />
     {/* <Route path='/rules' component={Rules} /> */}
     <Route path="/diceroll" component={DiceRoll} />{" "}
     {/* just making a path to get a display before the game component is done (where the dice roll will eventually be rendered)   */}
